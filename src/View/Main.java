@@ -27,8 +27,8 @@ public class Main {
                     break;
                 case 2:
                     System.out.println(" --- Lista de tarefas --- "); // for-each para mostrar a lista de tarefas
-                    for (Tarefa listaDeTarefas : tarefaController.getListaDeTarefas()) {
-                        System.out.println("nome: " + listaDeTarefas.getNome() + " " + "Descrição: " + listaDeTarefas.getDescricao());
+                    for (Tarefa tarefa : tarefaController.getListaDeTarefas()) {
+                        System.out.println("nome: " + tarefa.getNome() + " " + "Descrição: " + tarefa.getDescricao());
                     }
                     System.out.println("\n1 - voltar");
                     escolha = scanner.nextInt();
@@ -36,8 +36,8 @@ public class Main {
                 case 3:
                     int i = 1;
                     System.out.println(" --- Lista de tarefas --- "); // for-each para mostrar a lista de tarefas
-                    for (Tarefa listaDeTarefas : tarefaController.getListaDeTarefas()) {
-                        System.out.println(i + " - " + "nome: " + listaDeTarefas.getNome() + " " + "Descrição: " + listaDeTarefas.getDescricao());
+                    for (Tarefa tarefa : tarefaController.getListaDeTarefas()) {
+                        System.out.println(i + " - " + "nome: " + tarefa.getNome() + " " + "Descrição: " + tarefa.getDescricao());
                         i++;
                     }
                     System.out.println("\nDigite a posição da tarefa que deseja excluir: ");
